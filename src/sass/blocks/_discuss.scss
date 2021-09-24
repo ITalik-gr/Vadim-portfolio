@@ -1,0 +1,122 @@
+
+.discuss {
+  background: #131218;
+  height: 756px;
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+    padding-right: 68px;
+  }
+  &-title {
+    font-weight: 600;
+    font-size: 140px;
+    line-height: 111%;
+    max-width: 1188px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    font-size: calc(38px + 102 * (100vw / 2560));
+    color: #FFFFFF;
+  }
+  &-btn {
+    width: 486.55px;
+    height: 486.55px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s transform cubic-bezier(.25,.1,.25,1);
+    position: relative;
+    &_1 {
+      background-color: #6D6AFF;
+      transition-property: all;
+      transition-timing-function: cubic-bezier(.25,.1,.25,1);
+      transition-duration: .40s;
+      transition-delay: 0s;
+    }
+    &_2 {
+      background-color: #000000;
+      transition-property: all;
+      transition-timing-function: cubic-bezier(.25,.1,.25,1);
+      transition-duration: 0.45s;
+      transition-delay: 0.05s;
+    }
+    &_3 {
+      background-color: #2F2CE9;
+      transition-property: all;
+      transition-timing-function: cubic-bezier(.25,.1,.25,1);
+      transition-duration: .5s;
+      transition-delay: 0.1ms;
+    }
+    &_1, &_2, &_3 {
+      position: absolute;
+      border-radius: 100%;
+      width: 0%;
+      height: 0%;
+      transform: scale(0);
+    }
+    &_hover {
+      width: 355.05px;
+      height: 355.05px;
+      background: #2F2CE9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      position: absolute;
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        border-radius: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      &:before { // внутрений
+        border: 1.64375px solid rgba(7, 55, 227, 0.555);
+        width: 414.23px;
+        height: 414.23px;
+        
+      }
+      &:after { // внешний 
+        border: 1.64375px solid rgba(7, 55, 227, 0.212);
+        width: 486.55px;
+        height: 486.55px;
+      }
+    }
+    &__text {
+      font-weight: 600;
+      font-size: 36.1625px;
+      line-height: 111%;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      z-index: 20;
+    }
+    &:hover {
+      transform: scale(1.1);
+      .discuss {
+        &-btn {
+          &_1 {
+
+          }
+          &_2 {
+
+
+          }
+          &_3 {
+
+          }
+          &_1, &_2, &_3 {
+            width: 350.05px;
+            height: 350.05px;
+            transform: scale(1);
+          }
+        }
+      }
+    }
+  }
+}

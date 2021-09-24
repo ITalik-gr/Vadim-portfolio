@@ -1,0 +1,33 @@
+.defi-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 156px 0px;
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  &-title {
+    text-align: left;
+    font-weight: 600;
+    font-size: calc(38px + 42 * (100vw / 2560));
+    line-height: 111%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #1D1A23;
+    margin-bottom: 40px;
+  }
+  &-descr {
+    text-align: left;
+    font-size: calc(16px + 8 * (100vw / 2560));
+    line-height: 162%;
+    letter-spacing: -0.015em;
+    color: #1D1A23;
+
+    p {
+      max-width: 777px;
+    }
+  }
+}

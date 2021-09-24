@@ -1,0 +1,34 @@
+.work {
+  padding-top: 338px;
+  &-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  &-title {
+    font-weight: 600;
+    line-height: 111%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #131218;
+    margin-bottom: 114px;
+    font-size: calc(38px + 72 * (100vw / 2560));
+  }
+  &-column {
+    margin-right: 66px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &-item {
+    margin-bottom: 66px;
+    width: 100%;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    img {
+      max-width: 100%;
+      z-index: 2;
+    }
+  }
+}

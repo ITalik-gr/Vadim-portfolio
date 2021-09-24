@@ -1,0 +1,160 @@
+// Preloader Animate 
+
+.preloader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #FFF;
+  padding: 66px 40px 40px 40px;
+  border-left: 0px solid #130EFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-card {
+      background: #131218;
+      padding: 67px 83px;
+  }
+  &-none {
+      border-left: 2000px solid #130EFF;
+      transform: translateX(100%);
+      transition-property: transform, border-left;
+      transition-delay: 0.20s, .26s; // добавил по 0.20
+      transition-duration: 1.4s, 1.46s;
+      transition-timing-function: cubic-bezier(.5,-0.03,.46,1.1), cubic-bezier(.5,-0.03,.46,1.1);
+  }
+  &-none {
+      .preloader {
+          width: 0%;
+      }
+  }
+}
+
+@keyframes preloader-width {
+  from {
+      transform: translateX(0);
+  }
+
+  to {
+      transform: translateX(100%);
+  }
+}
+@keyframes preloader-border {
+  from {
+      border-left: 0px solid #130EFF;
+  }
+
+  to {
+      border-left: 2000px solid #130EFF;
+  }
+}
+
+// Preloader Animate Close
+
+// First block show animate
+
+.text__animation_1 {
+  transform: rotate(2deg) translateY(30px);
+  transform-origin: 0 50%;
+  position: relative;
+  transition: .4s cubic-bezier(0.25, 0.1, 0.25, 1);
+  opacity: 0;
+}
+.text__animation_2 {
+  transform: rotate(1deg) translateY(2px);
+  transform-origin: 0 50%;
+  position: relative;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition-delay: .15s;
+  transition-duration: .85s;
+  &:before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      opacity: 1;
+      visibility: visible;
+      transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+      transition-delay: .15s;
+      transition-duration: .90s;
+      background: #131218;
+  }
+}
+
+.text-anim {
+  transform: rotate(0deg) translateY(0px);
+  transform-origin: 0 50%;
+  opacity: 1;
+  &:before {
+      bottom: -100%;
+  }
+}
+.opacity-animate {
+  opacity: 1!important;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition-delay: .2s;
+  transition-duration: .6s;
+}
+
+
+// First block show animate Close
+// Exp hover
+
+  .exp {
+    &-image {
+      img {
+        transition: .4s all;
+      }
+      &:hover {
+        cursor: none;
+        img {
+          filter: brightness(0.7);
+        }
+      }
+    }
+  }
+
+// Exp close
+// Work
+
+.work {
+  &-item {
+    img {
+      transition: .4s all;
+    }
+    &:hover {
+      cursor: none;
+      img {
+        filter: brightness(0.7);
+      }
+    }
+  }
+}
+
+// Work Close
+
+// AOS animate
+
+//? Для всех
+[data-aos="standart"] {
+  transform: translateY(50px);
+  // transform-origin: 0 50%;
+  opacity: 0;
+}
+[data-aos="standart"].aos-animate { // 0.9s duration. delay - 0.34s
+  transform: translateY(0);
+  // transform-origin: 0 50%;
+  opacity: 1;
+}
+
+[data-aos] {
+  body[data-aos-easing="default"] &,
+  &[data-aos][data-aos-easing="default"] {
+    transition-timing-function: cubic-bezier(.5,-0.03,.46,1.11);
+  }
+}
+// AOS annimate Close

@@ -1,0 +1,38 @@
+
+.exp {
+  margin-bottom: 261px;
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-image {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    img {
+      max-width: 996px;
+    }
+  }
+  &-title {
+    font-weight: 600;
+    line-height: 111%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #1D1A23;
+    transform: translateY(30px);
+    font-size: calc(38px + 72 * (100vw / 2560));
+  }
+  &-descr {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 162%;
+    letter-spacing: -0.015em;
+    color: #1D1A23;
+    font-size: calc(16px + 10 * (100vw / 2560));
+    margin-top: 67px;
+    p {
+      max-width: 575px;
+    }
+  }
+}

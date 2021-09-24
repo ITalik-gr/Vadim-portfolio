@@ -1,0 +1,45 @@
+div.cursors div {
+  position: absolute;
+  top: 300px;
+  left: 300px;
+  z-index: 10000;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+.cursor-1 {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 400px;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 111%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  opacity: 0;
+  transition: opacity 0.5s;
+  z-index: 2000;
+}
+.cursor-2 {
+  position: absolute;
+  top: -10px;
+  left: -300px;
+  width: 900px;
+  font-size: 64px;
+  line-height: 111%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  opacity: 0;
+  transition: opacity 0.1s;
+  text-shadow: 0px 1px 22px rgba(83, 45, 45, 0.06);
+  z-index: 2000;
+}
+.visible {
+  opacity: 1;
+}
+.visible-work {
+  opacity: 1;
+}

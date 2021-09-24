@@ -1,0 +1,19 @@
+
+.focus {
+  background: #131218;
+  mix-blend-mode: normal;
+  padding: 251px 168px 251px 241px;
+  &-title {
+    max-width: 1287px;
+    font-size: calc(32px + 98 * (100vw / 2560));
+    font-weight: 600;
+    font-size: 130px;
+    line-height: 111%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    br {
+      display: none;
+    }
+  }
+}

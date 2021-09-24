@@ -1,0 +1,15 @@
+.defi-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-image {
+    margin-right: 44px;
+    &:last-child {
+      margin-right: 0;
+    }
+    img {
+      max-width: 100%;
+      max-height: 937px;  
+    }
+  }
+}

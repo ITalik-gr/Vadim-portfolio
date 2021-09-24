@@ -1,0 +1,18 @@
+
+.skills {
+  padding-top: 90px;
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-card {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 111%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #918C9C;
+    font-size: calc(20px + 40 * (100vw / 2560));
+  }
+}

@@ -1,0 +1,223 @@
+.nav {
+  padding: 64px 0px 0px 0px;
+  background: #131218;
+  margin-bottom: -2px;
+  &-toggle {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    cursor: pointer;
+    display: none;
+    transition: .4s all;
+    span {
+      width: 65%;
+      height: 3px;
+      background-color: #FFFFFF;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      border-radius: 90px;
+    }
+    &::before,
+    &:after {
+      content: '';
+      width: 100%;
+      height: 3px;
+      background-color: #FFFFFF;
+      position: absolute;
+      border-radius: 90px;
+    }
+    &:before {
+      top: 0;
+      left: 0;
+    }
+    &:after {
+      bottom: 0;
+      left: 0;
+    }
+  }
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+  }
+  &-logo {
+    img {
+      max-width: 200px;
+    }
+  }
+  &-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+    &__mob {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 0!important;
+      .nav-list-item {
+        margin-right: 0;
+        margin-bottom: 46px;
+        &__sale {
+          font-size: 16px;
+          width: 55px;
+          height: 26px;
+        }
+        a {
+          font-size: 22px;
+          line-height: 111%;
+          color: #1D1A23;
+        }
+      }
+    }
+    &-item {
+      margin-right: 121px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: .3s all;
+      &:last-child {
+        margin-right: 0;
+      }
+      &:hover {
+        transform: translateX(10px);
+        a {
+          color: #BCBBFF;
+          &::before {
+            opacity: 1;
+          }
+        }
+      }
+      a {
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 111%;
+        color:#FFFFFF;
+        transition: .3s all;
+        &::before {
+          content: '';
+          position: absolute;
+          left: -23px;
+          top: calc(50% - 0.5px);
+          width: 18px;
+          height: 1px;
+          background-color: #BCBBFF;
+          opacity: 0;
+          transition: .3s all;
+        }
+      }
+      &__sale {
+        cursor: default;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 111%;
+        width: 78px;
+        height: 35px;
+        color: #FA4A4A;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 6px;
+      }
+    }
+  }
+  &-social {
+    &__mob {
+      display: flex;
+      margin-bottom: 0px;
+      justify-content: space-between;
+      .nav-social {
+        &__link {
+          img {
+            max-width: 52px;
+            width: 42px;
+          }
+        }
+      }
+    }
+    &__link {
+      margin-right: 63px;
+      &:last-child {
+        margin-right: 0;
+      }
+      svg {
+        path {
+          stroke: #FFFFFF;
+        }
+      }
+      &:hover {
+        svg {
+          path {
+            stroke: #BCBBFF;
+            transition: .3s all;
+          }
+        }
+      }
+      svg {
+        max-width: 40px;
+      }
+    }
+  }
+  &-white {
+    background-color: #fff;
+    .nav {
+      &-toggle {
+        span,
+        &::before,
+        &::after {
+          background-color: #1D1A23;
+        }
+      }
+      &-list {
+        &-item {
+          &:hover {
+            transform: translateX(10px);
+            a {
+              color: #0E68EF;
+              &::before {
+                opacity: 1;
+              }
+            }
+          }
+          &::before {
+            content: '';
+            position: absolute;
+            left: -23px;
+            top: calc(50% - 0.5px);
+            width: 18px;
+            height: 1px;
+            background-color: #0E68EF;
+            opacity: 0;
+            transition: .3s all;
+          }
+          a {
+            color: #1D1A23;
+          }
+          &__sale {
+            color: #1D1A23;
+          }
+        }
+      }
+      &-social {
+        &__link {
+          &:hover {
+            svg {
+              path {
+                stroke: #0E68EF;
+                transition: .3s all;
+              }
+            }
+          }
+          svg {
+            path {
+              stroke: #1D1A23;
+            }
+          }
+        }
+      }
+    }
+  }
+}

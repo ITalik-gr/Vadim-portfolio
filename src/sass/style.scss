@@ -1,0 +1,95 @@
+
+
+@import 'libs/bootstrap-reboot.min';
+// @import 'libs/bootstrap-grid.css';
+
+* {
+    font-family: 'Carmen Sans';
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+body {
+    overflow-x: hidden;
+}
+span {
+    padding: 0;
+    margin: 0;
+}
+.container-fluid {
+    padding-left: 148px;
+    padding-right: 148px;
+    width: 100%;
+}
+.container {
+    width: 100%;
+    padding-left: 240px;
+    padding-right: 240px;
+    margin: auto;
+    &-work {
+        padding-left: 283px;
+        padding-right: 283px;
+    }
+    &-defi {
+        padding-right: 390px;
+        padding-left: 390px;
+        max-width: 2560px;
+        margin: 0 auto;
+    }
+}
+.next-case {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 111%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #131218;
+    margin-bottom: 155px;
+}
+
+.parallax {
+    height: 400px;
+    width: 100%;
+    background-image: url("../img/web.png");
+    background-position-y: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    img {
+        // display: none;
+    }
+  }
+
+@import 'blocks/header';
+@import 'blocks/exp';
+@import 'blocks/partner';
+@import 'blocks/focus';
+@import 'blocks/skills';
+@import 'blocks/work';
+@import 'blocks/boost';
+@import 'blocks/discuss';
+@import 'blocks/footer';
+@import 'blocks/main-404';
+@import 'blocks/animate';
+@import 'blocks/cursor';
+@import 'blocks/nav';
+@import 'blocks/menu';
+@import 'blocks/defi-1';
+@import 'blocks/defi-2';
+@import 'blocks/defi-text';
+@import 'blocks/defi-images';
+@import 'blocks/check';
+
+
+@import 'base/media';

@@ -122,10 +122,53 @@
       }
     }
   }
+  .resources {
+    .container {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
   .container {
     &-defi {
       padding-right: 40px;
       padding-left: 40px;
+    }
+  }
+  .header {
+    &-ui {
+      &-image {
+        max-width: 429px;
+        max-height: 812.39px;
+      }
+      .container {
+        padding-left: 150px;
+        padding-right: 150px;
+      }
+      &-title {
+        max-width: 589px;
+        margin-bottom: 20px;
+        font-size: 72px;
+      }
+      &-descr {
+        margin-bottom: 41px;
+        font-size: 16px; 
+        p {
+          max-width: 406px;
+        }
+      }
+      &-btn {
+        width: 441px;
+        height: 80px;
+        font-size: 18px;
+        &-price {
+          font-size: 38px;
+          margin-right: 42px;
+          &__old-price {
+            font-size: 24px;
+            margin-left: 8px;
+          }
+        }
+      }
     }
   }
 }
@@ -134,6 +177,31 @@
     &-image {
       img {
         width: 90%;
+      }
+    }
+  }
+  .ui {
+    &-gallery {
+      margin-bottom: 123px;
+      &-wrap {
+        margin-bottom: 124px;
+      }
+      &-container {
+        padding-right: 40px;
+        padding-left: 40px;
+      }
+      &-card {
+        &:first-child {
+          margin-right: 20px;
+        }
+        &__width {
+          margin: 36px 0px;
+        }
+      }
+      &-btn {
+       font-size: 18px;
+       width: 421px;
+       height: 80px;
       }
     }
   }
@@ -189,17 +257,41 @@
     h3 {
       font-size: calc(14px + 4 * (100vw / 1440));
     }
-    &-defi {
-      margin-bottom: 71px;
-      margin-top: 99px;
+    &-ui {
       &-title {
-        font-size: calc(46px + 46 * (100vw / 1440));
+        font-size: calc(34px + 38 * (100vw / 1440));
       }
+      .container {
+        padding-right: 40px;
+        padding-left: 40px;
+      }
+      &-image {
+        max-width: 329px;
+        max-height: 712.39px;     
+      }
+    }
+  }
+  .defi-2 {
+    margin: 130px 0;
+    &-image {
+      max-width: 670px;
+    }
+    &-descr {
+      p {
+        max-width: 515px;
+      }
+    }
+  }
+  .defi {
+    &-text {
+      margin: 120px 0;
       &-descr {
-        font-size: calc(16px + 2 * (100vw / 1440));
-      }
-      &-year {
-        font-size: 18px;
+        p {
+          max-width: 707px;
+          &:first-child {
+            margin-bottom: 34px;
+          }
+        }
       }
     }
   }
@@ -387,7 +479,25 @@
       left: -150px;
     }
   }
-
+  .header {
+    &-defi {
+      margin-bottom: 71px;
+      margin-top: 99px;
+      &-title {
+        font-size: calc(46px + 46 * (100vw / 1440));
+        margin-bottom: 28px;
+      }
+      &-descr {
+        font-size: calc(16px + 2 * (100vw / 1440));
+        p {
+          max-width: 457px;
+        }
+      }
+      &-year {
+        font-size: 18px;
+      }
+    }
+  }
   .defi {
     &-2 {
       &-title {
@@ -403,7 +513,6 @@
       }
     }
     &-text {
-      margin: 124px 0px;
       &-title{
         font-size: calc(38px + 26 * (100vw / 1440));
       }
@@ -413,11 +522,11 @@
     }
   }
   .check {
-    margin: 64px 0px;
+    margin: 90px 0px 60px 0px;
     height: 361px;
     &-title {
       margin-bottom: 48px;
-      font-size: calc(38px + 34 * (100vw / 2560));
+      font-size: calc(38px + 34 * (100vw / 1440));
     }
     &-btn {
       width: 234px;
@@ -438,6 +547,45 @@
   .next-case {
     margin-bottom: 64px;
     font-size: 32px;
+  }
+  .resources {
+    margin-top: 95px;
+    margin-bottom: 100px;
+    &-title {
+      margin-bottom: 100px;
+    }
+    &-card {
+      &:first-child {
+        margin-right: 20px;
+      }
+      &-image {
+        margin-bottom: 24px;
+        max-width: 670px;
+      }
+      &-title {
+        font-size: 32px;
+        margin-bottom: 6px;
+      }
+      &-sale {
+        width: 80px;
+        height: 38px;
+        font-size: 20px;
+        margin-right: 12px;
+      }
+      &-cost {
+        font-size: 16px;
+      }
+    }
+  }
+  .ui {
+     &-descr {
+      font-size: 28px;
+      padding: 145px 0px;
+      p {
+        max-width: 731px;
+      }
+     }
+
   }
 }
 //?
@@ -488,6 +636,33 @@
   }
   .boost {
     padding: 250px 0 240px 0;
+  }
+  .defi-2 {
+    &-image {
+      max-width: 480px;
+    }
+  }
+  .resources {
+    &-title {
+      margin-bottom: 70px;
+    }
+    &-card {
+      &-title {
+        font-size: 24px;
+      }
+      &-sale {
+        width: 70px;
+        height: 35px;
+        font-size: 18px;
+      }
+    }
+  }
+  .header {
+    &-ui {
+      &-title {
+        max-width: 519px;
+      }
+    }
   }
 }
 
@@ -578,6 +753,58 @@
       left: -20px;
     }
   }
+  .defi-2 {
+    flex-direction: column;
+    margin: 70px 0;
+    &-text {
+      margin-top: 30px;
+      margin-left: 0;
+    }
+  }
+  .check {
+    margin: 70px 0 50px 0;
+    height: 365px;
+  }
+  .resources {
+    margin-bottom: 80px;
+    margin-top: 47px;
+    &-wrap {
+      flex-direction: column;
+    }
+    &-title {
+      margin-bottom: 56px;
+    }
+    &-card {
+      &:first-child {
+        margin-right: 0;
+      }
+      margin-bottom: 30px;
+    }
+  }
+  .header {
+    &-ui {
+      padding-top: 116px;
+      &-image {
+        display: none;
+      }
+      &-title {
+        margin-bottom: 26px;
+      }
+      &-text {
+        padding-bottom: 134px;
+      }
+    }
+  }
+  .ui {
+    &-descr {
+      font-size: 25px;
+      line-height: 32px;
+      padding: 75px 0;
+      p {
+        max-width: 651px;
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) { //576 
@@ -623,6 +850,50 @@
     }
     &-block {
       align-items: flex-start;
+    }
+    &-ui {
+      padding-top: 48px;
+      .container {
+        padding: 0px 16px;
+      }
+      &-title {
+        font-size: calc(34px + (106 + 106 * 0.7) * ((100vw - 320px) / 2560));
+      }
+      &-wrap {
+
+      }
+      &-block {
+        margin-bottom: 139px;
+      }
+      &-text {
+        padding-bottom: 42px;
+        width: 100%;
+      }
+      &-btn {
+        margin-top: 20px;
+        width: 100%;
+        &-price {
+          display: none;
+          &-mob {
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+    &-defi {
+      &-title {
+        font-size: calc(46px + (46 + 46 * 0.7) * ((100vw - 320px) / 1440));
+      }
+      &-text {
+        flex-direction: column;
+      }
+      &-descr {
+        font-size: calc(16px + (2 + 2 * 0.7) * ((100vw - 320px) / 1440));
+        p {
+          max-width: 277px;
+        }
+      }
     }
   }
   .exp {
@@ -682,11 +953,100 @@
   .cursors {
     display: none;
   }
+  .defi {
+    &-1 {
+      &__image {
+        height: 380px;
+      }
+    }
+    &-2 {
+      margin: 30px 0;
+      &-title {
+        font-size: calc(38px + (26 + 26 * 0.7) * ((100vw - 320px) / 1440));
+      }
+      &-descr {
+        font-size: calc(16px + (4 + 4 * 0.7) * ((100vw - 320px) / 1440));
+      }
+    }
+    &-images {
+      flex-direction: column;
+      &-image {
+        margin-right: 0;
+        &:first-child {
+          margin-bottom: 30px;
+        }
+      }
+    }
+    &-text {
+      &-title {
+        font-size: calc(38px + (26 + 26 * 0.7) * ((100vw - 320px) / 1440));
+      }
+      &-descr {
+        font-size: calc(16px + (4 + 4 * 0.7) * ((100vw - 320px) / 1440));
+      }
+    }
+  }
+  .check {
+    &-title {
+      font-size: calc(38px + (34 + 34 * 0.7) * ((100vw - 320px) / 1440));
+    }
+    &-buttons {
+      flex-direction: column;
+    }
+    &-btn {
+      margin-right: 0;
+      &:first-child {
+        margin-bottom: 24px;
+      }
+    }
+  }
+  .resources {
+    &-title {
+      font-size: calc(34px + (106 + 106 * 0.7) * ((100vw - 320px) / 2560));
+    }
+  }
 
+  .ui {
+    &-descr {
+      p {
+        max-width: 451px;
+      }
+    }
+    &-gallery {
+      margin-bottom: 46px;
+      &-wrap {
+        margin-bottom: 46px;
+      }
+      &-card {
+        margin-bottom: 20px;
+        &__width {
+          margin: 0 0 20px 0;
+        }
+        &:first-child {
+          margin-right: 0;
+        }
+      }
+      &-block {
+        flex-direction: column;
+
+      }
+    }
+  }
 }
 @media (max-width: 576px)  { //320
   .container,
-  .container-fluid {
+  .container-fluid,
+  .container-defi {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .resources {
+    .container {
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+  }
+  .ui-gallery-container {
     padding-right: 16px;
     padding-left: 16px;
   }
@@ -713,6 +1073,34 @@
     }
     &-title {
       margin: 14px 0px;
+    }
+    &-defi {
+      margin-bottom: 55px;
+      margin-top: 59px;
+      &-title {
+        margin-bottom: 16px;
+      }
+    }
+    &-ui {
+      &-descr {
+        font-size: 14px;
+        line-height: 162%;
+        p {
+          max-width: 278px;
+        }
+      }
+      &-btn {
+        font-size: 18px;
+        &-price {
+          font-size: 26px;
+          align-items: flex-end;
+          line-height: 100%;
+          &__old-price {
+            margin-left: 6px;
+            font-size: 16px;
+          }
+        }
+      }
     }
   }
   .exp {
@@ -915,6 +1303,86 @@
     }
     &-image {
       max-width: 116px;
+    }
+  }
+
+  .defi {
+    &-2 {
+      margin: 48px 0;
+      &-image {
+        min-height: 380px;
+        max-height: 400px;
+      }
+      &-title {
+        margin-bottom: 20px;
+      }
+      &-text {
+        margin-top: 53px;
+      }
+    }
+  }
+  .check {
+    height: 377px;
+    margin: 36px 0px;
+    &-title {
+      text-align: center;
+      max-width: 255px;
+    }
+    &-btn {
+      width: 234px;
+      height: 80px;
+    }
+  }
+  .next-case {
+    font-size: 20px;
+    margin-bottom: 36px;
+  }
+
+  .resources {
+    margin-top: 57px;
+    &-card {
+      margin-bottom: 48px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &-image {
+        margin-bottom: 20px;
+        max-width: 288px;
+        min-height: 380px;
+        max-height: 390px;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      &-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      &-sale {
+        font-size: 20px;
+        width: 80px;
+        height: 38px;
+      }
+      &-cost {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .ui {
+    &-descr {
+      font-size: 16px;
+      line-height: 22px;
+      padding: 48px 0px;
+      p {
+        max-width: 288px;
+      }
+    }
+    &-gallery {
+      &-btn {
+        margin-top: -20px;
+      }
     }
   }
 }

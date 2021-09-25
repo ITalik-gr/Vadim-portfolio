@@ -1,0 +1,49 @@
+
+.ui-gallery {
+  margin-bottom: 190px;
+  &-wrap {
+    margin-bottom: 190px;
+  }
+  &-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-card {
+    img {
+      max-width: 100%;
+    }
+    &:first-child {
+      margin-right: 66px;
+    }
+    &__width {
+      margin: 64px 0px;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  &-btn {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 162%;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+    color: #131218;
+    width: 488px;
+    height: 132px;
+    border: 2px solid #131218;
+    box-sizing: border-box;
+    border-radius: 70.6813px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      color: #131218;
+    }
+    &__wrap {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

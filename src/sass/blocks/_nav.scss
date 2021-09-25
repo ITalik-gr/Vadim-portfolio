@@ -2,6 +2,12 @@
   padding: 64px 0px 0px 0px;
   background: #131218;
   margin-bottom: -2px;
+  &-ui {
+    background: #3B49C8;
+    .nav-list-item__sale {
+      color: #fff;
+    }
+  }
   &-toggle {
     width: 32px;
     height: 32px;
@@ -92,7 +98,7 @@
         }
       }
       a {
-        font-weight: normal;
+        font-weight: 300;
         font-size: 20px;
         line-height: 111%;
         color:#FFFFFF;
@@ -111,7 +117,7 @@
       }
       &__sale {
         cursor: default;
-        font-weight: normal;
+        font-weight: 300;
         font-size: 20px;
         line-height: 111%;
         width: 78px;

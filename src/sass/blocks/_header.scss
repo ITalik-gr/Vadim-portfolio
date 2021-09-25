@@ -39,9 +39,6 @@
     color: #FFF;
 
   }
-  &-subtitle {
-    
-  }
   h3 {
     font-weight: normal;
     line-height: 113.5%;
@@ -80,5 +77,90 @@
       letter-spacing: -0.01em;
       color: #1D1A23;
     }
+  }
+  &-ui {
+    background: #3B49C8;
+    padding-top: 166px;
+    &-wrap {
+      display: flex;
+      justify-content: space-between;
+    }
+    &-text {
+      padding-bottom: 184px;
+      max-width: 1135px
+    }
+    &-image {
+      max-width: 541px;
+      display: flex;
+      max-height: 1171px;
+      justify-content: center;
+      align-items: flex-end;
+      img {
+        width: 100%;
+      }
+    }
+    &-title {
+      font-weight: 600;
+      line-height: 111%;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      font-size: calc(34px + 106 * (100vw / 2560));
+      margin-bottom: 20px;
+      max-width: 1110px;
+    }
+    &-descr {
+      margin-bottom: 50px;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 162%;
+      letter-spacing: -0.015em;
+      color: #FFFFFF;
+      p {
+        max-width: 525px;
+      }
+    }
+    &-btn {
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 162%;
+      text-align: center;
+      letter-spacing: -0.015em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      width: 619px;
+      height: 132px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid #FFFFFF;
+      border-radius: 70.6813px;
+      &:hover {
+        color: #FFF;
+      }
+      &-price {
+        font-weight: 600;
+        font-size: 52px;
+        line-height: 130%;
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-right: 55px;
+        &-mob {
+          display: none;
+        }
+        &__old-price {
+          font-weight: 600;
+          font-size: 32px;
+          line-height: 111%;
+          letter-spacing: -0.03em;
+          text-decoration-line: line-through;
+          text-transform: uppercase;
+          color: rgba(255, 255, 255, 0.406);
+          margin-left: 12px;
+        }
+      }
+    }
+
   }
 }

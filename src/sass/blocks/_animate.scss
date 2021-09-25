@@ -137,6 +137,20 @@
 
 // Work Close
 
+// Resources
+.resources {
+  &-card {
+    &:hover {
+      .resources-card-image {
+        img {
+          filter: brightness(0.8);
+        }
+      }
+    }
+  }
+}
+
+// resources end
 // AOS animate
 
 //? Для всех

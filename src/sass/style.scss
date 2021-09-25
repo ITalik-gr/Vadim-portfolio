@@ -31,10 +31,10 @@ span {
     width: 100%;
 }
 .container {
-    width: 100%;
+    max-width: 2560px;
     padding-left: 240px;
     padding-right: 240px;
-    margin: auto;
+    margin: 0 auto;
     &-work {
         padding-left: 283px;
         padding-right: 283px;
@@ -58,18 +58,29 @@ span {
     color: #131218;
     margin-bottom: 155px;
 }
-
-.parallax {
-    height: 400px;
-    width: 100%;
-    background-image: url("../img/web.png");
-    background-position-y: 0%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    img {
-        // display: none;
+.ui {
+    &-descr {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 181px 0px 189px 0px;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 50px;
+        text-align: center;
+        letter-spacing: -0.03em;
+        color: #1D1A23;
+        p {
+            max-width: 993px
+        }
     }
-  }
+    &-gallery-container {
+        max-width: 2560px;
+        margin: 0 auto;
+        padding-left: 283px;
+        padding-right: 283px;
+    }
+}
 
 @import 'blocks/header';
 @import 'blocks/exp';
@@ -90,6 +101,8 @@ span {
 @import 'blocks/defi-text';
 @import 'blocks/defi-images';
 @import 'blocks/check';
+@import 'blocks/resources';
+@import 'blocks/ui-gallery';
 
 
 @import 'base/media';

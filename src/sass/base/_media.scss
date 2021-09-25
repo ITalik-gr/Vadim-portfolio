@@ -262,8 +262,11 @@
         font-size: calc(34px + 38 * (100vw / 1440));
       }
       .container {
-        padding-right: 40px;
-        padding-left: 40px;
+        padding-right: 220px;
+        padding-left: 150px;
+      }
+      &-text {
+        padding-bottom: 152px;
       }
       &-image {
         max-width: 329px;
@@ -585,7 +588,9 @@
         max-width: 731px;
       }
      }
+     &-gallery {
 
+     }
   }
 }
 //?
@@ -659,8 +664,9 @@
   }
   .header {
     &-ui {
-      &-title {
-        max-width: 519px;
+      .container {
+        padding-right: 40px;
+        padding-left: 40px;
       }
     }
   }

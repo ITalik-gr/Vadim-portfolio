@@ -1,7 +1,3 @@
-
-
-
-
 .header {
   min-height: 1153px;
   max-height: 1140px;
@@ -161,5 +157,30 @@
       }
     }
 
+  }
+  &-mentoring {
+    background: #1D1A23;
+    padding: 415px 0px 531px 0px;
+    &-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-title {
+      font-weight: 600;
+      font-size: 160px;
+      line-height: 111%;
+      text-align: center;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+      font-size: calc(42px + 118 * (100vw / 2560));
+      color: #FFFFFF;
+      span {
+        background-color: #FFF;
+        background-image: linear-gradient(90deg, #FF7051, #5E5AFF);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
   }
 }

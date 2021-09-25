@@ -1,0 +1,66 @@
+.boost-mentor {
+  padding: 237px 0px;
+  &-container {
+    max-width: 2560px;
+    margin: 0 auto;
+    padding-left: 457px;
+    padding-right: 457px;
+  }
+  &-title {
+    font-weight: 600;
+    font-size: 110px;
+    line-height: 111%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #1D1A23;
+    margin-bottom: 82px;
+  }
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-descr {
+    font-size: 26px;
+    line-height: 162%;
+    letter-spacing: -0.015em;
+    color: #1D1A23;
+    p {
+      max-width: 665px;
+    }
+  }
+  &-cards {
+
+  }
+  &-card {
+    background: #F6F6F6;
+    width: 672px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 48px;
+    &:first-child {
+      margin-bottom: 40px;
+    }
+    &__title {
+      font-weight: 600;
+      font-size: 110px;
+      line-height: 111%;
+      letter-spacing: -0.03em;
+      color: #1D1A23;
+      margin-bottom: 9px;
+    }
+    &__descr {
+      font-size: 26px;
+      line-height: 162%;
+      letter-spacing: -0.015em;
+      color: #1D1A23;
+      p {
+
+      }
+    }
+  }
+
+}

@@ -1,0 +1,52 @@
+.how {
+  padding: 0px 0px 290px 0px;
+  &-title {
+    font-weight: 600;
+    line-height: 111%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #1D1A23;
+  }
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 62px 0px;
+  }
+  &-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-title {
+      font-weight: 600;
+      font-size: 42px;
+      line-height: 130%;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+      color: rgba(29, 26, 35, 0.7);
+    }
+    &-arrow {
+      max-width: 83px;
+      margin-left: 113px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  &-btn {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 162%;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+    color: #131218;
+    width: 488px;
+    height: 132px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #131218;
+    box-sizing: border-box;
+    border-radius: 70.6813px;
+  }
+}

@@ -81,6 +81,9 @@ span {
         padding-right: 283px;
     }
 }
+.title-2 {
+    font-size: calc(38px + 72 * (100vw / 2560));
+}
 
 @import 'blocks/header';
 @import 'blocks/exp';
@@ -104,6 +107,10 @@ span {
 @import 'blocks/resources';
 @import 'blocks/ui-gallery';
 @import 'blocks/boost-mentor';
+@import 'blocks/plan';
+@import 'blocks/info';
+@import 'blocks/reviews.scss';
+@import 'blocks/how.scss';
 
 
 @import 'base/media';

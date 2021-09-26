@@ -1,0 +1,27 @@
+
+.info {
+  padding-top: 64px;
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .info-card:first-child {
+      margin-right: 34px;
+    }
+  }
+  &-card {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 162%;
+    padding: 16px 51px;
+    letter-spacing: -0.015em;
+    color: #FFFFFF;
+    background: #1D1A23;
+    border-radius: 99px;
+  }
+}

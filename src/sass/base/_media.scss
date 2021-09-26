@@ -592,6 +592,17 @@
 
      }
   }
+
+  .plan {
+    &-card {
+      &-title {
+        font-size: calc(38px + 24 * (100vw / 1440));
+      }
+    }
+  }
+  .title-2 {
+    font-size: calc(38px + 34 * (100vw / 1440));
+  }
 }
 //?
 
@@ -1037,6 +1048,17 @@
 
       }
     }
+  }
+
+  .plan {
+    &-card {
+      &-title {
+        font-size: calc(38px + (44 + 44 * 0.7) * ((100vw - 320px) / 2560));
+      }
+    }
+  }
+  .title-2 {
+    font-size: calc(38px + (72 + 72 * 0.7) * ((100vw - 320px) / 2560));
   }
 }
 @media (max-width: 576px)  { //320

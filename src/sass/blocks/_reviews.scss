@@ -1,0 +1,59 @@
+.reviews {
+  padding: 370px 0px 380px 0px;
+  &-title {
+    font-weight: 600;
+    line-height: 111%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #1D1A23;
+  }
+  &-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 96px;
+  }
+  &-card {
+    position: relative;
+    max-width: 634px;
+    height: 344px;
+    background: #F6F6F6;
+    padding: 36px 49px 50px 36px;
+    margin-right: 49px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &-image {
+      position: absolute;
+      top: 47px;
+      right: 55px;
+      img {
+        width: 100%;
+      }
+    }
+    &-name {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 162%;
+      letter-spacing: -0.015em;
+      color: #1D1A23;
+    }
+    &-plan {
+      margin-bottom: 20px;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 162%;
+      letter-spacing: -0.015em;
+      color: rgba(29, 26, 35, 0.6);
+    }
+    &-descr {
+      font-size: 22px;
+      line-height: 162%;
+      letter-spacing: -0.015em;
+      color: #1D1A23;
+      p {
+        max-width: 549px;
+      }
+    }
+  }
+}

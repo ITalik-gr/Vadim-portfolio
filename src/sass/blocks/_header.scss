@@ -161,10 +161,24 @@
   &-mentoring {
     background: #1D1A23;
     padding: 415px 0px 531px 0px;
+    position: relative;
     &-wrap {
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+    &-scroll {
+      position: absolute;
+      bottom: 67px;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      span {
+        background-color: hsla(0, 0%, 100%, 0.4);
+        width: 1px;
+        height: 43px;
+        display: block;
+      }
     }
     &-title {
       font-weight: 600;

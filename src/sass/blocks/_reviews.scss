@@ -1,5 +1,5 @@
 .reviews {
-  padding: 370px 0px 380px 0px;
+  padding: 370px 0 300px 0;
   &-title {
     font-weight: 600;
     line-height: 111%;
@@ -16,12 +16,27 @@
   &-card {
     position: relative;
     max-width: 634px;
-    height: 344px;
+    height: 414px;
     background: #F6F6F6;
-    padding: 36px 49px 50px 36px;
+    padding: 36px 49px 40px 36px;
     margin-right: 49px;
     &:last-child {
       margin-right: 0;
+    }
+    &-top {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    &-text {
+
+    }
+    &__user-pic {
+      max-width: 164px;
+      margin-right: 32px;
+      img {
+        width: 100%;
+      }
     }
     &-image {
       position: absolute;
@@ -39,7 +54,6 @@
       color: #1D1A23;
     }
     &-plan {
-      margin-bottom: 20px;
       font-weight: 600;
       font-size: 22px;
       line-height: 162%;

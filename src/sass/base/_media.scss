@@ -1,4 +1,69 @@
 //?
+@media (max-width: 2290px) {
+  .boost-mentor {
+    &-container {
+      padding-left: 220px;
+      padding-right: 220px;
+    }
+    &-title {
+      max-width: 750px;
+    }
+  }
+  .plan {
+    &-card {
+      margin-right: 30px;
+      padding: 41px 36px 45px 36px;
+      &-descr {
+        p {
+          font-size: 19px;
+        }
+      }
+      &-list {
+        &__item {
+          font-size: 20px;
+        }
+      }
+      &-price {
+        span {
+          font-size: 47px;
+        }
+      }
+      &-btn {
+        height: 112px;
+        font-size: 23px;
+      }
+    }
+  }
+  .reviews {
+    &-card {
+      height: 384px;
+      padding: 21px 46px 28px 31px;
+      height: 344px;
+      &__user-pic {
+        max-width: 124px;
+        margin-right: 20px;
+      }
+      &-name {
+        font-size: 28px;
+      }
+      &-plan {
+        font-size: 20px;
+      }
+      &-top {
+        margin-bottom: 24px;
+      }
+      &-descr {
+        font-size: 19px;
+      }
+    }
+  }
+  .how {
+    .container-work {
+      padding-left: 143px;
+      padding-right: 143px;
+    }
+  }
+}
 @media (max-width: 2100px) {  
   .exp {
     &-title {
@@ -33,6 +98,98 @@
     &-defi {
       padding-right: 100px;
       padding-left: 100px;
+    }
+  }
+  .info {
+    &-card {
+      font-size: 20px;
+    }
+  }
+  .how {
+    &-card {
+      &-title {
+        font-size: 34px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1920px) {
+  .exp {
+    &-image {
+      img {
+        width: 90%;
+      }
+    }
+  }
+  .ui {
+    &-gallery {
+      margin-bottom: 123px;
+      &-wrap {
+        margin-bottom: 124px;
+      }
+      &-container {
+        padding-right: 40px;
+        padding-left: 40px;
+      }
+      &-card {
+        &:first-child {
+          margin-right: 20px;
+        }
+        &__width {
+          margin: 36px 0px;
+        }
+      }
+      &-btn {
+       font-size: 18px;
+       width: 421px;
+       height: 80px;
+      }
+    }
+  }
+
+  .plan {
+    .container-work {
+      padding-left: 220px;
+      padding-right: 220px;
+    }
+    &-card {
+      margin-right: 20px;
+      padding: 36px;
+      &-title {
+        margin-bottom: 20px;
+      }
+      &-descr {
+        p {
+          font-size: 16px;
+        }
+      }
+      &-list {
+        &__item {
+          font-size: 16px;
+        }
+      }
+      &-price {
+        font-size: 20px;
+        &__old-price {
+          font-size: 16px;
+        }
+        span {
+          font-size: 38px;
+        }
+      }
+      &-btn {
+        height: 80px;
+        font-size: 18px;
+        border: 1px solid #000000;
+      }
+    }
+  }
+
+  .reviews {
+    .container-work {
+      padding-left: 153px;
+      padding-right: 153px;
     }
   }
 }
@@ -171,38 +328,75 @@
       }
     }
   }
-}
-@media (max-width: 1920px) {
-  .exp {
-    &-image {
-      img {
-        width: 90%;
+
+  .boost-mentor {
+    &-descr {
+      font-size: 22px;
+      p {
+        max-width: 492px;
+      }
+    }
+    &-card {
+      width: 440px;
+      height: 233px;
+      &__title {
+        font-size: 72px;
+      }
+      &__descr {
+        font-size: 23px;
       }
     }
   }
-  .ui {
-    &-gallery {
-      margin-bottom: 123px;
-      &-wrap {
-        margin-bottom: 124px;
+  .plan {
+    .container-work {
+      padding-left: 150px;
+      padding-right: 150px;
+    }
+  }
+  .info {
+    .container-work {
+      padding-left: 143px;
+      padding-right: 143px;
+    }
+  }
+  .reviews {
+    .container-work {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+    &-card {
+      margin-right: 20px;
+      &-name {
+        font-size: 24px;
       }
-      &-container {
-        padding-right: 40px;
-        padding-left: 40px;
+      &-plan {
+        font-size: 16px;
       }
-      &-card {
-        &:first-child {
-          margin-right: 20px;
+      &-descr {
+        p {
+          font-size: 16px;
         }
-        &__width {
-          margin: 36px 0px;
-        }
       }
-      &-btn {
-       font-size: 18px;
-       width: 421px;
-       height: 80px;
+    }
+  }
+  .how {
+    &-card {
+      &-title {
+        font-size: 32px;
       }
+      &-arrow {
+        margin-left: 50px;
+      }
+    }
+    &-btn {
+      border: 1px solid #000000;
+      font-size: 18px;
+      max-width: 368px;
+      height: 80px;
+    }
+    .container-work {
+      padding-right: 40px;
+      padding-left: 40px;
     }
   }
 }
@@ -271,6 +465,12 @@
       &-image {
         max-width: 329px;
         max-height: 712.39px;     
+      }
+    }
+    &-mentoring {
+      padding: 249px 0 291px 0;
+      &-scroll {
+        bottom: 37px;
       }
     }
   }
@@ -594,14 +794,90 @@
   }
 
   .plan {
+    padding: 85px 0;
     &-card {
+      height: 647px;
       &-title {
         font-size: calc(38px + 24 * (100vw / 1440));
       }
+      &-btn {
+        margin-top: 21px;
+      }
+      &-list {
+        &__item {
+          margin-bottom: 23px;
+        }
+      }
+    }
+    .container-work {
+      padding-right: 40px;
+      padding-left: 40px;
     }
   }
   .title-2 {
     font-size: calc(38px + 34 * (100vw / 1440));
+  }
+  .boost-mentor {
+    padding: 167px 0;
+    &-title {
+      margin-bottom: 22px;
+    }
+    &-descr {
+      margin-top: 30px;
+      font-size: 18px;
+      p {
+        max-width: 367px;
+      }
+    }
+    &-card {
+      max-width: 440px;
+      height: 233px;
+      &:first-child {
+        margin-bottom: 26px;
+      }
+      &__descr {
+        font-size: 18px;
+      }
+    }
+    &-container {
+      padding-left: 175px;
+      padding-right: 200px;
+    }
+  }
+  .reviews {
+    padding: 190px 0 150px 0;
+    &-wrap {
+      margin-top: 54px;
+    }
+    &-card {
+      max-width: 440px;
+      height: 301px;
+      padding: 21px 27px 28px 31px;
+      &-descr {
+        line-height: 162%;
+        font-size: 16px;
+      }
+    }
+    .container-work {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+  }
+  .info {
+    padding-top: 30px;
+    &-card {
+      padding: 11px 27px;
+    }
+    .container-work {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+  }
+  .how {
+    padding: 0 0 150px 0;
+    &-wrap {
+      margin: 49px 0;
+    }
   }
 }
 //?

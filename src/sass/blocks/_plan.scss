@@ -4,7 +4,7 @@
   padding: 144px 0px;
   &-wrap {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
   &-card {
@@ -15,6 +15,10 @@
     width: 634px;
     height: 873px;
     padding: 51px 46px 55px 46px;
+    margin-right: 49px;
+    &:last-child {
+      margin-right: 0;
+    }
     &-top {
 
     }
@@ -43,6 +47,7 @@
     &-list {
       list-style-type: disc;
       padding-left: 20px;
+      margin-top: 40px;
       &__item {
         font-weight: 600;
         font-size: 22px;

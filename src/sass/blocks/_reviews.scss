@@ -1,5 +1,8 @@
 .reviews {
   padding: 370px 0 300px 0;
+  &-mobile {
+    display: none;
+  }
   &-title {
     font-weight: 600;
     line-height: 111%;

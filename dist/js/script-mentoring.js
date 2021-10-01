@@ -1,22 +1,35 @@
+var $page = $('html, body');
+$('a[href*="#"]').click(function() {
+    $page.animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+    return false;
+});
+
 
 let nav = document.querySelector('.nav-wrap'),
-    logo = document.querySelector('.preloader-card');
+    logo = document.querySelector('.preloader-card'),
+    mentor_text = document.querySelector('.header-mentoring-title');
 
-    function opacity () {
-      nav.classList.add('opacity-animate')
-    }
-    function scale () {
-      logo.classList.add('preloader-card__active')
-    }
-
+function opacity () {
+  nav.classList.add('opacity-animate')
+}
+function scale () {
+  logo.classList.add('preloader-card__active')
+}
+function showMentorTitle() {
+  mentor_text.classList.add('mentor-opacity')
+  mentor_text.classList.add('mentor-scale')
+}
 window.onload = function () {
   let ab = setTimeout(function() {
     scale();
     document.querySelector('.preloader').classList.add('preloader-none');
-  }, 1000)
+  }, 1000) // cекунду стоитт прелоадер после загрузки
   let aa = setTimeout(function() {
     opacity();
-  }, 1800)
+    showMentorTitle();
+  }, 1850) // 1.8 сек после загрузки появляется аним
 
 }
 

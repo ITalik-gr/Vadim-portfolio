@@ -189,6 +189,9 @@
       text-transform: uppercase;
       font-size: calc(42px + 118 * (100vw / 2560));
       color: #FFFFFF;
+      transform: scale(0.95);
+      margin-left: -7px;
+      opacity: 0;
       span {
         background-color: #FFF;
         background-image: linear-gradient(90deg, #FF7051, #5E5AFF);

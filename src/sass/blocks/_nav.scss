@@ -90,6 +90,9 @@
       }
       &:hover {
         transform: translateX(10px);
+        .nav-list-item__sale {
+          color: #BCBBFF;
+        }
         a {
           color: #BCBBFF;
           &::before {
@@ -183,6 +186,7 @@
             transform: translateX(10px);
             a {
               color: #0E68EF;
+              
               &::before {
                 opacity: 1;
               }

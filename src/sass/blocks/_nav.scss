@@ -184,9 +184,11 @@
         &-item {
           &:hover {
             transform: translateX(10px);
-            a {
+            .nav-list-item__sale {
               color: #0E68EF;
-              
+            }
+            a {
+              color: #0E68EF;    
               &::before {
                 opacity: 1;
               }

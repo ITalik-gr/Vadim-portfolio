@@ -1,13 +1,6 @@
-// let text1 = document.querySelector('.header-name');
-// let text2 = document.querySelector('.header-title'),
-//     text3 = document.querySelector('.header-subtitle'),
     nav = document.querySelector('.nav-wrap'),
     logo = document.querySelector('.preloader-card');
 
-    // function text_anim () {
-    //   text2.classList.add('text-anim');
-    //   text3.classList.add('text-anim');
-    // }
     function opacity () {
       nav.classList.add('opacity-animate')
     }
@@ -21,7 +14,6 @@ window.onload = function () {
     document.querySelector('.preloader').classList.add('preloader-none');
   }, 1000)
   let aa = setTimeout(function() {
-    // text_anim();
     opacity();
   }, 1800)
 

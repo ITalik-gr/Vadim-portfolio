@@ -24,15 +24,31 @@
 
     <!-- Favicon  -->
 
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="font/stylesheet.css">
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- <link rel="stylesheet" href="css/mobile.css" media="(max-width: 992px)""> -->
+    <link rel="stylesheet" href="font/stylesheet.css">
 </head>
 <body>
+    <div class="preloader">
+        <div class="preloader-card">
+           <img src="img/preloader-logo.svg" alt="" class="preloader-image">
+        </div>
+    </div>
     <div class="menu">
         <div class="container-fluid">
             <div class="menu-wrap">
               <div class="menu-card">
+
+                <div class="menu-top">
+                    <div class="menu-logo">
+                        <img src="img/logo-mob.svg" alt="">
+                    </div>
+                    <div class="menu-close">
+                        <span></span>
+                    </div>
+                </div>
                 <ul class="nav-list nav-list__mob">
                     <li class="nav-list-item"><a href="#">Mentoring</a><span class="nav-list-item__sale">SALE</span></li>
                     <li class="nav-list-item"><a href="#">Free 3D Icons</a></li>
@@ -52,24 +68,18 @@
             </div>
         </div>
     </div>
-    <nav class="nav">
+    <nav class="nav nav-white">
         <div class="container-fluid">
             <div class="nav-wrap">
                 <div class="nav-logo">
-                    <img src="img/logo.svg" alt="Logo">
+                    <img src="img/black-logo.svg" alt="Logo">
                 </div>
-
                 <ul class="nav-list">
-                    <li class="nav-list-item"><a href="#">Mentoring</a><span class="nav-list-item__sale">SALE</span></li>
-                    <li class="nav-list-item"><a href="#">Design Resources</a></li>
+                    <li class="nav-list-item"><a href="mentoring.html">Mentoring</a><span class="nav-list-item__sale">(-50%)</span></li>
+                    <li class="nav-list-item"><a href="ui-kit.html">Free 3D Icons</a></li>
                 </ul>
-
                 <div class="nav-social">
-
-                    
-                    
-                    
-                    <a href="#" class="nav-social__link"> 
+                     <a href="#" class="nav-social__link"> 
                         <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M29.7884 7.2561H10.0634C8.24774 7.2561 6.77588 8.72797 6.77588 10.5436V30.2686C6.77588 32.0842 8.24774 33.5561 10.0634 33.5561H29.7884C31.604 33.5561 33.0759 32.0842 33.0759 30.2686V10.5436C33.0759 8.72797 31.604 7.2561 29.7884 7.2561Z" stroke="#1D1A23" stroke-width="1.64375" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M13.3511 18.7625V26.9812" stroke="#1D1A23" stroke-width="1.64375" stroke-linecap="round" stroke-linejoin="round"/>
@@ -108,8 +118,6 @@
         </div>
     </nav>
     
-
-
     <div class="main-404">
       <div class="container">
         <div class="main-404-wrap">
@@ -119,7 +127,11 @@
           <div class="main-404__subtitle">
             Something went wrong
           </div>
-          <a href="index.html" class="main-404__btn">Go to the homepage</a>
+          <a href="index.html" class="main-404__btn animate-btn">
+            <span class="animate-btn_1"></span>
+            <span class="animate-btn_2"></span>
+            Go to the homepage
+         </a>
         </div>
       </div>
     </div>
@@ -128,20 +140,21 @@
     <div class="discuss">
         <div class="container-fluid">
             <div class="discuss-wrap">
-                <div class="discuss-title">
+                <div data-aos-easing="default" data-aos="standart" class="discuss-title">
                     Let’s discuss something
                 </div>
 
-                <div class="discuss-btn">
-                    <span class="discuss-btn_hover">
-                        <span class="discuss-btn__text">
-                            Tap on me
+                <div data-aos-easing="default" data-aos="standart" class="discuss-wrapper">
+                    <div class="discuss-btn">
+                        <span class="discuss-btn_hover">
+                            <span class="discuss-btn__text">
+                                Tap on me
+                            </span>
                         </span>
-                    </span>
-
-                    <span class="discuss-btn_1"></span>
-                    <span class="discuss-btn_2"></span>
-                    <span class="discuss-btn_3"></span>
+                        <span class="discuss-btn_1"></span>
+                        <span class="discuss-btn_2"></span>
+                        <span class="discuss-btn_3"></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -149,7 +162,7 @@
     <div class="footer">
         <div class="container-fluid">
             <div class="footer-wrap">
-                <div class="footer-block-wrap">
+                <div data-aos-offset="10" data-aos-easing="default" data-aos="standart" class="footer-block-wrap">
                     <div class="footer-name">
                         Portfolio 2021
                     </div>
@@ -157,7 +170,7 @@
                         Frontend developing by italik
                     </a>
                 </div>
-                <div class="footer-social">
+                <div data-aos-offset="10" data-aos-easing="default" data-aos="standart" class="footer-social">
                     <a href="mailto:vadim.uiux@gmail.com" class="footer-email">vadim.uiux@gmail.com</a>
 
                     <div class="footer-link__wrap">
@@ -200,20 +213,11 @@
             </div>
         </div>
     </div>
-    <div class="preloader">
-        <div class="preloader-title">
-            Wake up, samurai...
-        </div>
-        <div class="preloader-timer">
-            76%
-        </div>
-    </div>
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script_404.js"></script>
-    <script type="module" src="js/queryLoader.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
 

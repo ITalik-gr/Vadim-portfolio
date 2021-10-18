@@ -111,6 +111,11 @@
       }
     }
   }
+  .plan {
+    &-card {
+      height: 793px;
+    }
+  }
 }
 @media (max-width: 1920px) {
   .exp {
@@ -186,6 +191,17 @@
     .container-work {
       padding-left: 153px;
       padding-right: 153px;
+    }
+  }
+  .info {
+    .container-work {
+      padding-left: 153px;
+      padding-right: 153px;
+    }
+  }
+  .focus {
+    &-title {
+      font-size: calc(32px + 98 * (100vw / 2560));
     }
   }
 }
@@ -348,11 +364,14 @@
       padding-left: 150px;
       padding-right: 150px;
     }
+    &-card {
+      height: 703px;
+    }
   }
   .info {
     .container-work {
-      padding-left: 143px;
-      padding-right: 143px;
+      padding-left: 80px;
+      padding-right: 80px;
     }
   }
   .reviews {
@@ -393,6 +412,14 @@
     .container-work {
       padding-right: 40px;
       padding-left: 40px;
+    }
+  }
+  .work {
+    &-column {
+      margin-right: 20px;
+    }
+    &-item {
+      margin-bottom: 21px;
     }
   }
 }

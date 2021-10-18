@@ -1,6 +1,10 @@
 .header {
-  min-height: 1153px;
-  max-height: 1140px;
+  min-height: 300px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // max-height: 1140px;
   background: #131218;
   margin-bottom: 150px;
   display: flex;
@@ -63,6 +67,7 @@
       letter-spacing: -0.01em;
       color: #1D1A23;
       font-size: calc(16px + 8 * (100vw / 2560));
+      margin-left: 8px;
       p {
         max-width: 527px;
       }
@@ -161,8 +166,12 @@
   }
   &-mentoring {
     background: #1D1A23;
-    padding: 415px 0px 531px 0px;
+    // padding: 415px 0px 531px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
+    height: calc(100vh + (-45px));
     &-wrap {
       display: flex;
       justify-content: center;
